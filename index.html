@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .txt-ctnr, .img-ctnr {
+            width: 800px; 
+        }
+        .form * {text-align: left}
+        #inp-search {width: 600px; text-align: left}
+
+        .img-ctnr {
+            height: 600px;
+            border: 1px solid grey; 
+        }
+        #img-elmt {
+            width: 800px;
+            height: 600px;
+            object-fit: contain;
+        }
+        .btn {
+            cursor:pointer; 
+            border: solid black 2px; 
+            border-radius: 4px;
+            height: 40px;
+            line-height: 37px;
+            margin-top: 5px;
+        }
+        ol {font-weight: bold}
+        li {font-weight: normal}
+        #group-inp-email {position: relative}
+        #inp-email {width: 600px}
+        #icn-valid {height:32px; width:32px; position:absolute; top:50%; transform:translateY(-50%); border: none}
+
+        #btn-send {width: 400px; height: 50px; line-height: 47px; margin: 15px auto}
+    </style>
+
+</head>
+<body>
+    
+    <div class=txt-ctnr>
+        <h1>Pestr</h1>
+        <div class=form>
+            <label for=inp-search>Get me pictures of</label>
+            <input id=inp-search placeholder="whatever">
+            <button id=btn-search>GO</button>
+        </div>
+    </div>
+
+    <div class=img-ctnr><img id=img-elmt></div>
+
+    <div class=txt-ctnr>
+        <div class=btn id=btn-next>Get a new image</div>
+
+        <div class=btn id=btn-add>Attach this image</div>
+
+        <ol id=attachments>vvv Attached images vvv</ol>
+
+        <div id=group-inp-email>
+            <input id=inp-email placeholder="Enter email">
+            <span id=icn-valid>
+        </div>
+
+        <div class=btn id=btn-dispatch>Dispatch</div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
